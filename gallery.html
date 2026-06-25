@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>Gallery | Shri Hari Swimming Academy Gwalior</title>
+<meta name="description" content="Photo gallery of Shri Hari Swimming Academy Gwalior — coaches, training sessions, group batches and state-level competition moments."/>
+<link rel="canonical" href="https://shrihariswimmingacademy.com/gallery.html"/>
+<link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,600&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"/>
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --red:#c41e1e;--red-dk:#8b0000;--red-lt:#fecaca;--red-xs:#fff5f5;
+  --sky:#0284c7;--sky-dk:#075985;--sky-lt:#bae6fd;--sky-xs:#f0f9ff;
+  --gold:#d4a017;--gold-lt:#fef9ec;
+  --white:#ffffff;--off:#f8fafc;--off2:#f1f5f9;
+  --g100:#f1f5f9;--g200:#e2e8f0;--g300:#cbd5e1;--g400:#94a3b8;--g600:#475569;--g800:#1e293b;--g900:#0f172a;
+}
+html{scroll-behavior:smooth}
+body{font-family:'Outfit',sans-serif;color:var(--g900);overflow-x:hidden;background:var(--white)}
+::selection{background:var(--red);color:#fff}
+::-webkit-scrollbar{width:4px}
+::-webkit-scrollbar-thumb{background:var(--red);border-radius:4px}
+
+/* NAV */
+nav{position:fixed;top:0;width:100%;z-index:200;height:70px;display:flex;align-items:center;justify-content:space-between;padding:0 5%;background:rgba(255,255,255,0.96);backdrop-filter:blur(20px);box-shadow:0 1px 0 var(--g200)}
+.nl{display:flex;align-items:center;gap:12px}
+.nl img{width:50px;height:50px;object-fit:contain;border-radius:8px;border:1.5px solid var(--red-lt)}
+.nl-text h3{font-family:'Cormorant Garamond',serif;font-size:1.08rem;color:var(--red-dk);line-height:1;font-weight:700}
+.nl-text span{font-size:0.58rem;color:var(--g400);letter-spacing:2px;text-transform:uppercase}
+.nr{display:flex;gap:24px;align-items:center;list-style:none}
+.nr a{font-size:0.8rem;font-weight:500;color:var(--g600);text-decoration:none;transition:color .2s}
+.nr a:hover{color:var(--red)}
+.nr a.active{color:var(--red);font-weight:700}
+.nr .nb{background:var(--red);color:#fff!important;padding:9px 22px;border-radius:50px;font-weight:700!important;box-shadow:0 2px 12px rgba(196,30,30,.3);transition:all .2s!important}
+.nr .nb:hover{background:var(--red-dk)!important;transform:translateY(-1px)}
+
+/* PAGE HEADER */
+.pg-head{min-height:46vh;display:flex;align-items:center;padding:130px 5% 60px;background:linear-gradient(135deg,#fff5f5 0%,#ffffff 40%,#f0f9ff 70%,#e0f2fe 100%);position:relative;overflow:hidden}
+.pg-head::before{content:'';position:absolute;inset:0;background-image:radial-gradient(var(--g200) 1px,transparent 1px);background-size:28px 28px;opacity:.5}
+.pg-head-content{position:relative;z-index:2;max-width:680px}
+.hero-badge{display:inline-flex;align-items:center;gap:8px;border:1px solid var(--red-lt);color:var(--red);font-size:0.68rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;padding:7px 16px;border-radius:50px;margin-bottom:22px;background:var(--red-xs)}
+.pg-head h1{font-family:'Cormorant Garamond',serif;font-size:clamp(2.6rem,5vw,4.2rem);line-height:1.08;color:var(--red-dk);margin-bottom:14px;letter-spacing:-1px;font-weight:700}
+.pg-head p{font-size:0.95rem;color:var(--g600);line-height:1.85;font-weight:300;max-width:520px}
+
+/* SECTIONS (shared) */
+section{padding:92px 5%}
+.sec-eyebrow{font-size:0.65rem;font-weight:800;letter-spacing:3.5px;text-transform:uppercase;margin-bottom:10px;display:flex;align-items:center;gap:10px}
+.sec-eyebrow::before{content:'';width:22px;height:2px;border-radius:1px}
+.sec-eyebrow.r{color:var(--red)}
+.sec-eyebrow.r::before{background:var(--red)}
+.sec-eyebrow.s{color:var(--sky-dk)}
+.sec-eyebrow.s::before{background:var(--sky-dk)}
+.sec-h{font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,3.2vw,3rem);line-height:1.1;color:var(--g900);margin-bottom:14px;font-weight:700}
+.sec-p{color:var(--g600);font-size:0.94rem;line-height:1.85;font-weight:300;max-width:520px}
+.divbar{width:42px;height:3px;background:linear-gradient(90deg,var(--red),var(--sky));border-radius:2px;margin:12px 0 20px}
+.tc{text-align:center}
+.tc .sec-p{margin:0 auto}
+.tc .sec-eyebrow{justify-content:center}
+.tc .divbar{margin:12px auto 20px}
+
+/* GALLERY */
+.gallery{background:var(--off)}
+.gal-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:18px;margin-top:50px}
+.photo{border-radius:12px;overflow:hidden;aspect-ratio:4/3;position:relative;cursor:pointer;border:1px solid var(--g200);box-shadow:0 2px 10px rgba(0,0,0,.04);transition:transform .3s,box-shadow .3s}
+.photo:hover{transform:translateY(-6px);box-shadow:0 14px 36px rgba(0,0,0,.1)}
+.photo img{width:100%;height:100%;object-fit:cover;transition:transform .5s;display:block}
+.photo:hover img{transform:scale(1.06)}
+.photo-cap{position:absolute;bottom:0;left:0;right:0;padding:26px 14px 12px;color:#fff;font-size:0.74rem;font-weight:600;background:linear-gradient(to top,rgba(0,0,0,.78),transparent);opacity:0;transition:opacity .3s}
+.photo:hover .photo-cap{opacity:1}
+.photo-tag{display:inline-block;margin-top:3px;font-size:0.6rem;font-weight:700;letter-spacing:.5px;text-transform:uppercase;color:#fde68a}
+
+/* FOOTER */
+footer{background:var(--g900);padding:56px 5% 26px}
+.ft-top{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:40px;padding-bottom:42px;border-bottom:1px solid rgba(255,255,255,.07);margin-bottom:22px}
+.ft-logo{display:flex;align-items:center;gap:12px;margin-bottom:14px}
+.ft-logo img{width:54px;height:54px;object-fit:contain;border-radius:8px;background:rgba(255,255,255,.07);padding:4px;border:1px solid rgba(255,255,255,.1)}
+.ft-logo h3{font-family:'Cormorant Garamond',serif;color:#fff;font-size:1.1rem;font-weight:700}
+.ft-brand p{font-size:0.79rem;color:rgba(255,255,255,.35);line-height:1.8;font-weight:300;margin-bottom:14px}
+.ft-tag{display:inline-block;background:var(--red);color:#fff;font-size:0.63rem;font-weight:800;padding:5px 14px;border-radius:20px;letter-spacing:1px;text-transform:uppercase}
+.ft-col h4{color:rgba(255,255,255,.45);font-size:0.64rem;font-weight:800;text-transform:uppercase;letter-spacing:2.5px;margin-bottom:14px}
+.ft-col ul{list-style:none;display:flex;flex-direction:column;gap:9px}
+.ft-col a{font-size:0.79rem;color:rgba(255,255,255,.3);text-decoration:none;transition:color .2s;font-weight:300}
+.ft-col a:hover{color:rgba(255,255,255,.8)}
+.ft-bot{display:flex;justify-content:space-between;align-items:center;font-size:0.72rem;color:rgba(255,255,255,.2)}
+.ft-hashtag{color:var(--gold);font-weight:700;font-size:0.77rem}
+
+/* WHATSAPP */
+.wa{position:fixed;bottom:28px;right:28px;z-index:999;width:54px;height:54px;border-radius:50%;background:#25d366;display:flex;align-items:center;justify-content:center;font-size:1.5rem;text-decoration:none;box-shadow:0 4px 18px rgba(37,211,102,.45);transition:transform .2s;animation:waPulse 2.5s infinite}
+.wa:hover{transform:scale(1.1)}
+@keyframes waPulse{0%,100%{box-shadow:0 4px 18px rgba(37,211,102,.45)}50%{box-shadow:0 4px 30px rgba(37,211,102,.7)}}
+
+/* REVEAL */
+.reveal{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s ease}
+.reveal.visible{opacity:1;transform:translateY(0)}
+
+/* LIGHTBOX */
+.lightbox{position:fixed;inset:0;z-index:1000;background:rgba(15,23,42,.92);display:none;align-items:center;justify-content:center;padding:5%}
+.lightbox.open{display:flex}
+.lightbox img{max-width:100%;max-height:86vh;border-radius:10px;box-shadow:0 20px 60px rgba(0,0,0,.5)}
+.lightbox-cap{position:absolute;bottom:30px;left:0;right:0;text-align:center;color:#fff;font-size:0.85rem;font-weight:600}
+.lightbox-close{position:absolute;top:24px;right:28px;width:42px;height:42px;border-radius:50%;background:rgba(255,255,255,.1);color:#fff;border:1px solid rgba(255,255,255,.25);font-size:1.3rem;display:flex;align-items:center;justify-content:center;cursor:pointer;transition:background .2s}
+.lightbox-close:hover{background:rgba(255,255,255,.22)}
+
+@media(max-width:860px){
+  .ft-top{grid-template-columns:1fr 1fr}
+  .nr{display:none}
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <a class="nl" href="index.html" style="text-decoration:none">
+    <img src="images/logo.png" alt="Logo">
+    <div class="nl-text">
+      <h3>Shri Hari Swimming Academy</h3>
+      <span>Gwalior · Madhya Pradesh</span>
+    </div>
+  </a>
+  <ul class="nr">
+    <li><a href="index.html#about" aria-label="About Shri Hari Swimming Academy">About</a></li>
+    <li><a href="index.html#coaches" aria-label="Meet our swimming coaches">Coaches</a></li>
+    <li><a href="index.html#pricing" aria-label="Swimming class fee structure">Fees</a></li>
+    <li><a href="gallery.html" class="active" aria-label="Photo gallery">Gallery</a></li>
+    <li><a href="index.html#contact" class="nb">Join Now</a></li>
+  </ul>
+</nav>
+
+<section class="pg-head" id="home">
+  <div class="pg-head-content">
+    <div class="hero-badge">📸 &nbsp; Moments from the Academy</div>
+    <h1>Our Gallery</h1>
+    <p>A glimpse of our coaches, training sessions and the champions Shri Hari Swimming Academy has produced over 26 years in Gwalior.</p>
+  </div>
+</section>
+
+<section class="gallery reveal" id="gallery">
+  <div class="tc">
+    <div class="sec-eyebrow r">Photo Gallery</div>
+    <h2 class="sec-h">Life at the Academy</h2>
+    <div class="divbar"></div>
+    <p class="sec-p">Coaches, training sessions, group batches and competition highlights from Taran Pushkar &amp; Vidya Bhavan.</p>
+  </div>
+  <div class="gal-grid">
+    <div class="photo">
+      <img src="images/gallery-state-competition.jpg" alt="69th State Competition 2025">
+      <div class="photo-cap">69th State Competition 2025<span class="photo-tag">Achievements</span></div>
+    </div>
+    <div class="photo">
+      <img src="images/gallery-coaching-session.jpg" alt="Coaching Session">
+      <div class="photo-cap">Coaching Session<span class="photo-tag">Training</span></div>
+    </div>
+    <div class="photo">
+      <img src="images/gallery-group-training.jpg" alt="Group Training">
+      <div class="photo-cap">Group Training<span class="photo-tag">Training</span></div>
+    </div>
+    <div class="photo">
+      <img src="images/pool-1.jpeg" alt="Taran Pushkar Pool">
+      <div class="photo-cap">Taran Pushkar Pool<span class="photo-tag">Facility</span></div>
+    </div>
+    <div class="photo">
+      <img src="images/pool-2.jpeg" alt="Vidya Bhavan Pool">
+      <div class="photo-cap">Vidya Bhavan Pool<span class="photo-tag">Facility</span></div>
+    </div>
+    <div class="photo">
+      <img src="images/newspaper-cutting.jpeg" alt="Newspaper Coverage">
+      <div class="photo-cap">Newspaper Coverage<span class="photo-tag">Press</span></div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="ft-top">
+    <div class="ft-brand">
+      <div class="ft-logo">
+        <img src="images/logo.png" alt="Logo">
+        <h3>Shri Hari Swimming Academy</h3>
+      </div>
+      <p>26 years of legacy — building confident swimmers and producing state-level champions through expert coaching at Gwalior's finest pools.</p>
+      <span class="ft-tag">Gwalior · Madhya Pradesh</span>
+    </div>
+    <div class="ft-col"><h4>Navigate</h4><ul><li><a href="index.html#about">About Us</a></li><li><a href="index.html#programs">Programs</a></li><li><a href="index.html#coaches" aria-label="Meet our swimming coaches">Coaches</a></li><li><a href="index.html#pricing" aria-label="Swimming class fee structure">Fees</a></li><li><a href="index.html#achievements">Achievements</a></li><li><a href="gallery.html" aria-label="Photo gallery">Gallery</a></li></ul></div>
+    <div class="ft-col"><h4>Programs</h4><ul><li><a href="index.html#programs">Kids Beginner</a></li><li><a href="index.html#programs">Learn to Swim</a></li><li><a href="index.html#programs">Competitive</a></li><li><a href="index.html#programs">Adult Batch</a></li></ul></div>
+    <div class="ft-col"><h4>Contact</h4><ul><li><a href="tel:9826237612">📞 98262 37612</a></li><li><a href="tel:8225069391">📞 82250 69391</a></li><li><a href="#">📍 Taran Pushkar, Gwalior</a></li><li><a href="#">📍 Vidya Bhavan School</a></li></ul></div>
+  </div>
+  <div class="ft-bot">
+    <p>© 2025 Shri Hari Swimming Academy, Gwalior. All rights reserved.</p>
+    <span class="ft-hashtag">#swimmingmatlbsachinsir</span>
+  </div>
+</footer>
+
+<a class="wa" href="https://wa.me/919826237612" target="_blank">💬</a>
+
+<div class="lightbox" id="lightbox">
+  <div class="lightbox-close" id="lightboxClose">✕</div>
+  <img id="lightboxImg" src="" alt="">
+  <div class="lightbox-cap" id="lightboxCap"></div>
+</div>
+
+<script>
+const obs = new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('visible')}),{threshold:0.1});
+document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
+
+const lightbox=document.getElementById('lightbox');
+const lightboxImg=document.getElementById('lightboxImg');
+const lightboxCap=document.getElementById('lightboxCap');
+function openLightbox(src,cap){lightboxImg.src=src;lightboxCap.textContent=cap;lightbox.classList.add('open')}
+function closeLightbox(){lightbox.classList.remove('open');lightboxImg.src=''}
+document.querySelectorAll('.photo').forEach(p=>{
+  p.addEventListener('click',()=>{
+    const img=p.querySelector('img');
+    openLightbox(img.src,img.alt);
+  });
+});
+document.getElementById('lightboxClose').addEventListener('click',closeLightbox);
+lightbox.addEventListener('click',e=>{if(e.target===lightbox)closeLightbox()});
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closeLightbox()});
+</script>
+
+</body>
+</html>

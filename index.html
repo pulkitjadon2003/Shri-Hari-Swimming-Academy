@@ -392,7 +392,7 @@ footer{background:var(--g900);padding:56px 5% 26px}
     <li><a href="#about" aria-label="About Shri Hari Swimming Academy">About</a></li>
     <li><a href="#coaches" aria-label="Meet our swimming coaches">Coaches</a></li>
     <li><a href="#pricing" aria-label="Swimming class fee structure">Fees</a></li>
-    <li><a href="#gallery" aria-label="Photo gallery">Gallery</a></li>
+    <li><a href="gallery.html" aria-label="Photo gallery">Gallery</a></li>
     <li><a href="#contact" class="nb">Join Now</a></li>
   </ul>
 </nav>
@@ -481,7 +481,7 @@ footer{background:var(--g900);padding:56px 5% 26px}
     <div class="prog sc"><div class="prog-num s">01</div><div class="prog-ico">🐣</div><h3>Kids Beginner</h3><p>Water confidence and basic strokes in a fun, safe environment for young children.</p><span class="prog-tag s">Ages 4–10</span></div>
     <div class="prog rc"><div class="prog-num r">02</div><div class="prog-ico">🏊</div><h3>Learn to Swim</h3><p>Master all 4 strokes — freestyle, backstroke, breaststroke and butterfly — progressively.</p><span class="prog-tag r">All Ages</span></div>
     <div class="prog sc"><div class="prog-num s">03</div><div class="prog-ico">🏆</div><h3>Competitive</h3><p>Advanced training for district, state and national competitions with race strategy.</p><span class="prog-tag s">Champions</span></div>
-    <div class="prog rc"><div class="prog-num r">04</div><div class="prog-ico">👤</div><h3>Adult Batch</h3><p>Structured adult sessions for fitness, technique and genuine water confidence.</p><span class="prog-tag r">18+ yrs</span></div>
+    <div class="prog rc"><div class="prog-num r">04</div><div class="prog-ico">🚺</div><h3>Adult Female</h3><p>Structured adult female only sessions for fitness, technique and genuine water confidence.</p><span class="prog-tag r">Female Only</span></div>
   </div>
 </section>
 
@@ -663,40 +663,6 @@ footer{background:var(--g900);padding:56px 5% 26px}
   </div>
 </section>
 
-<!-- GALLERY -->
-<section class="gallery reveal" id="gallery">
-  <div class="tc">
-    <div class="sec-eyebrow s">Photo Gallery</div>
-    <h2 class="sec-h">Our Academy in Action</h2>
-    <div class="divbar"></div>
-    <p class="sec-p">Glimpses of training, competitions and proud moments.</p>
-  </div>
-  <div class="gal-upload-wrap">
-    <div id="adminLoginBox">
-      <p>🔒 Admin Only — Enter password to add photos</p>
-      <div style="display:flex;gap:10px">
-        <input type="password" id="adminPass" placeholder="Enter password" onkeydown="if(event.key==='Enter')checkPass()"/>
-        <button onclick="checkPass()">Unlock</button>
-      </div>
-      <p id="passErr" style="color:var(--red);font-size:0.73rem;display:none">❌ Wrong password</p>
-    </div>
-    <div id="adminUploadBox" style="display:none;flex-direction:column;align-items:center;gap:10px">
-      <label for="galUpload" class="gal-upload-btn">📷 &nbsp;Add Photos to Gallery</label>
-      <input type="file" id="galUpload" multiple accept="image/*" style="display:none" onchange="addPhotos(this)"/>
-      <p style="font-size:0.73rem;color:var(--g400)">Select multiple photos at once</p>
-      <button onclick="lockAdmin()" style="background:transparent;border:1px solid var(--g300);color:var(--g400);font-size:0.73rem;padding:5px 14px;border-radius:20px;cursor:pointer">🔒 Lock Admin</button>
-    </div>
-  </div>
-  <div id="galGrid" class="gal-grid"></div>
-  <div id="lightbox" onclick="closeLb()" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,.94);z-index:9999;align-items:center;justify-content:center;flex-direction:column;padding:20px">
-    <button onclick="closeLb()" style="position:absolute;top:18px;right:24px;background:none;border:none;color:#fff;font-size:2rem;cursor:pointer">✕</button>
-    <button onclick="event.stopPropagation();chPhoto(-1)" style="position:absolute;left:18px;top:50%;transform:translateY(-50%);background:rgba(255,255,255,.14);border:none;color:#fff;font-size:2rem;width:48px;height:48px;border-radius:50%;cursor:pointer">‹</button>
-    <img id="lbImg" src="" style="max-width:90vw;max-height:85vh;object-fit:contain;border-radius:8px"/>
-    <p id="lbCap" style="color:rgba(255,255,255,.5);margin-top:12px;font-size:0.82rem"></p>
-    <button onclick="event.stopPropagation();chPhoto(1)" style="position:absolute;right:18px;top:50%;transform:translateY(-50%);background:rgba(255,255,255,.14);border:none;color:#fff;font-size:2rem;width:48px;height:48px;border-radius:50%;cursor:pointer">›</button>
-  </div>
-</section>
-
 <!-- CONTACT -->
 <section class="contact reveal" id="contact">
   <div class="sec-eyebrow r">Get in Touch</div>
@@ -756,7 +722,7 @@ footer{background:var(--g900);padding:56px 5% 26px}
       <p>26 years of legacy — building confident swimmers and producing state-level champions through expert coaching at Gwalior's finest pools.</p>
       <span class="ft-tag">Gwalior · Madhya Pradesh</span>
     </div>
-    <div class="ft-col"><h4>Navigate</h4><ul><li><a href="#about">About Us</a></li><li><a href="#programs">Programs</a></li><li><a href="#coaches" aria-label="Meet our swimming coaches">Coaches</a></li><li><a href="#pricing" aria-label="Swimming class fee structure">Fees</a></li><li><a href="#achievements">Achievements</a></li><li><a href="#gallery" aria-label="Photo gallery">Gallery</a></li></ul></div>
+    <div class="ft-col"><h4>Navigate</h4><ul><li><a href="#about">About Us</a></li><li><a href="#programs">Programs</a></li><li><a href="#coaches" aria-label="Meet our swimming coaches">Coaches</a></li><li><a href="#pricing" aria-label="Swimming class fee structure">Fees</a></li><li><a href="#achievements">Achievements</a></li><li><a href="gallery.html" aria-label="Photo gallery">Gallery</a></li></ul></div>
     <div class="ft-col"><h4>Programs</h4><ul><li><a href="#programs">Kids Beginner</a></li><li><a href="#programs">Learn to Swim</a></li><li><a href="#programs">Competitive</a></li><li><a href="#programs">Adult Batch</a></li></ul></div>
     <div class="ft-col"><h4>Contact</h4><ul><li><a href="tel:9826237612">📞 98262 37612</a></li><li><a href="tel:8225069391">📞 82250 69391</a></li><li><a href="#" onclick="openEmail();return false;">✉️ Gmail</a></li><li><a href="#">📍 Taran Pushkar, Gwalior</a></li><li><a href="#">📍 Vidya Bhavan School</a></li></ul></div>
   </div>
