@@ -71,6 +71,11 @@ section{padding:92px 5%}
 .photo:hover .photo-cap{opacity:1}
 .photo-tag{display:inline-block;margin-top:3px;font-size:0.6rem;font-weight:700;letter-spacing:.5px;text-transform:uppercase;color:#fde68a}
 
+/* VIDEO */
+.video-wrap{max-width:380px;margin:50px auto 0}
+.video-card{border-radius:14px;overflow:hidden;border:1px solid var(--g200);box-shadow:0 8px 36px rgba(0,0,0,.1);background:var(--g900)}
+.video-card video{width:100%;display:block;max-height:640px;background:#000}
+
 /* FOOTER */
 footer{background:var(--g900);padding:56px 5% 26px}
 .ft-top{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:40px;padding-bottom:42px;border-bottom:1px solid rgba(255,255,255,.07);margin-bottom:22px}
@@ -167,6 +172,23 @@ footer{background:var(--g900);padding:56px 5% 26px}
     <div class="photo">
       <img src="images/newspaper-cutting.jpeg" alt="Newspaper Coverage">
       <div class="photo-cap">Newspaper Coverage<span class="photo-tag">Press</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="gallery reveal" id="video" style="background:var(--white)">
+  <div class="tc">
+    <div class="sec-eyebrow s">Watch</div>
+    <h2 class="sec-h">Academy Review Video</h2>
+    <div class="divbar"></div>
+    <p class="sec-p">A quick look at our training sessions, pools and the energy at Shri Hari Swimming Academy.</p>
+  </div>
+  <div class="video-wrap">
+    <div class="video-card">
+      <video controls preload="metadata" poster="images/review-video-poster.jpg">
+        <source src="video/review-video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
     </div>
   </div>
 </section>
